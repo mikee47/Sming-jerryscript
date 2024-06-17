@@ -8,7 +8,6 @@
  */
 
 #include "include/Jerryscript/Debug.h"
-#include <jerryscript.h>
 #include <debug_progmem.h>
 
 namespace Jerryscript
@@ -21,8 +20,8 @@ bool printHeap()
 		return false;
 	}
 
-	m_printf(_F("[JS] Heap size %u, allocated %u, peak %u\r\n"), stats.size, stats.allocated_bytes,
-			 stats.peak_allocated_bytes);
+	m_printf(_F("[JS] Heap size %u, allocated %u, peak %u\r\n"), unsigned(stats.size), unsigned(stats.allocated_bytes),
+			 unsigned(stats.peak_allocated_bytes));
 	return true;
 }
 
