@@ -220,3 +220,81 @@ index 12770f36..5ab67df2 100644
  
    utf8_string1_p = ecma_compare_get_string_chars (string1_p, string1_size_and_length);
    utf8_string2_p = ecma_compare_get_string_chars (string2_p, string2_size_and_length);
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 044a2de8..c7887d10 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -12,7 +12,7 @@
+ # See the License for the specific language governing permissions and
+ # limitations under the License.
+ 
+-cmake_minimum_required (VERSION 2.8.12)
++cmake_minimum_required (VERSION 3.10)
+ project (Jerry C)
+ 
+ if(NOT DEFINED PYTHON)
+diff --git a/jerry-core/CMakeLists.txt b/jerry-core/CMakeLists.txt
+index cdcb0f49..48605a2c 100644
+--- a/jerry-core/CMakeLists.txt
++++ b/jerry-core/CMakeLists.txt
+@@ -12,7 +12,7 @@
+ # See the License for the specific language governing permissions and
+ # limitations under the License.
+ 
+-cmake_minimum_required (VERSION 2.8.12)
++cmake_minimum_required (VERSION 3.10)
+ set(JERRY_CORE_NAME jerry-core)
+ project (${JERRY_CORE_NAME} C)
+ 
+diff --git a/jerry-ext/CMakeLists.txt b/jerry-ext/CMakeLists.txt
+index e83b8147..6eef1779 100644
+--- a/jerry-ext/CMakeLists.txt
++++ b/jerry-ext/CMakeLists.txt
+@@ -12,7 +12,7 @@
+ # See the License for the specific language governing permissions and
+ # limitations under the License.
+ 
+-cmake_minimum_required (VERSION 2.8.12)
++cmake_minimum_required (VERSION 3.10)
+ set(JERRY_EXT_NAME jerry-ext)
+ project (${JERRY_EXT_NAME} C)
+ 
+diff --git a/jerry-main/CMakeLists.txt b/jerry-main/CMakeLists.txt
+index ccd62f4e..ff3dc80e 100644
+--- a/jerry-main/CMakeLists.txt
++++ b/jerry-main/CMakeLists.txt
+@@ -12,7 +12,7 @@
+ # See the License for the specific language governing permissions and
+ # limitations under the License.
+ 
+-cmake_minimum_required (VERSION 2.8.12)
++cmake_minimum_required (VERSION 3.10)
+ project (jerry-main C)
+ 
+ # Optional build settings
+diff --git a/jerry-math/CMakeLists.txt b/jerry-math/CMakeLists.txt
+index 4b5bba49..30177e9c 100644
+--- a/jerry-math/CMakeLists.txt
++++ b/jerry-math/CMakeLists.txt
+@@ -12,7 +12,7 @@
+ # See the License for the specific language governing permissions and
+ # limitations under the License.
+ 
+-cmake_minimum_required (VERSION 2.8.12)
++cmake_minimum_required (VERSION 3.10)
+ set(JERRY_MATH_NAME jerry-math)
+ project (${JERRY_MATH_NAME} C)
+ 
+diff --git a/jerry-port/default/CMakeLists.txt b/jerry-port/default/CMakeLists.txt
+index 17f3d478..7ac841e5 100644
+--- a/jerry-port/default/CMakeLists.txt
++++ b/jerry-port/default/CMakeLists.txt
+@@ -12,7 +12,7 @@
+ # See the License for the specific language governing permissions and
+ # limitations under the License.
+ 
+-cmake_minimum_required (VERSION 2.8.12)
++cmake_minimum_required (VERSION 3.10)
+ set(JERRY_PORT_DEFAULT_NAME jerry-port-default)
+ project (${JERRY_PORT_DEFAULT_NAME} C)
+ 

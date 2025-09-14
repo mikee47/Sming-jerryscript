@@ -13,7 +13,7 @@
 # limitations under the License.
 
 
-cmake_minimum_required (VERSION 2.8.12)
+cmake_minimum_required (VERSION 3.10)
 # The name of the files will be jsc.js and jsc.wasm.
 # jsc stands for Jerryscript Snapshot Compiler
 set(EMSCRIPTEN_SNAPSHOT_COMPILER jsc)
