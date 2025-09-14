@@ -85,7 +85,7 @@ jerry_value_t jerry_port_module_resolve(const jerry_value_t specifier, /**< modu
 	(void)referrer;
 	(void)user_p;
 
-	return jerry_create_error(JERRY_ERROR_REFERENCE, nullptr);
+	return jerry_error(JERRY_ERROR_REFERENCE, {});
 }
 
 /**
