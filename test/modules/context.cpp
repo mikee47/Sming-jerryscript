@@ -1,9 +1,9 @@
 #include <JerryTest.h>
 
+IMPORT_FSTR_LOCAL(contextSnap, PROJECT_DIR "/out/jerryscript/context.js.snap")
+
 namespace
 {
-IMPORT_FSTR(contextSnap, PROJECT_DIR "/out/jerryscript/context.js.snap")
-
 class Context : public JS::ContextTemplate<Context>
 {
 public:

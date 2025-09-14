@@ -1,12 +1,12 @@
 #include <SmingCore.h>
 #include <Jerryscript.h>
 
+IMPORT_FSTR_LOCAL(main_snap, PROJECT_DIR "/out/jerryscript/main.js.snap")
+
 namespace
 {
 SimpleTimer timer;
 HashMap<String, JS::Callable::List> events;
-
-IMPORT_FSTR(main_snap, PROJECT_DIR "/out/jerryscript/main.js.snap")
 
 /**
  * @brief Function to register event listeners
