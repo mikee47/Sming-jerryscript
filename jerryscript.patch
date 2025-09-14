@@ -298,3 +298,37 @@ index 17f3d478..7ac841e5 100644
  set(JERRY_PORT_DEFAULT_NAME jerry-port-default)
  project (${JERRY_PORT_DEFAULT_NAME} C)
  
+diff --git a/jerry-core/ecma/builtin-objects/ecma-builtin-helpers.h b/jerry-core/ecma/builtin-objects/ecma-builtin-helpers.h
+index db90bc93..8810bf0c 100644
+--- a/jerry-core/ecma/builtin-objects/ecma-builtin-helpers.h
++++ b/jerry-core/ecma/builtin-objects/ecma-builtin-helpers.h
+@@ -175,8 +175,8 @@ typedef enum
+ } ecma_date_timezone_t;
+ 
+ /* ecma-builtin-helpers-date.c */
+-extern const char day_names_p[7][3];
+-extern const char month_names_p[12][3];
++extern const char day_names_p[7][4];
++extern const char month_names_p[12][4];
+ 
+ int32_t ecma_date_day_from_time (ecma_number_t time);
+ int32_t ecma_date_year_from_time (ecma_number_t time);
+diff --git a/jerry-core/ecma/builtin-objects/ecma-builtin-helpers-date.c b/jerry-core/ecma/builtin-objects/ecma-builtin-helpers-date.c
+index 280a94c4..fd5233b5 100644
+--- a/jerry-core/ecma/builtin-objects/ecma-builtin-helpers-date.c
++++ b/jerry-core/ecma/builtin-objects/ecma-builtin-helpers-date.c
+@@ -36,12 +36,12 @@
+ /**
+  * Day names
+  */
+-const char day_names_p[7][3] = { "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" };
++const char day_names_p[7][4] = { "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" };
+ 
+ /**
+  * Month names
+  */
+-const char month_names_p[12][3] = {
++const char month_names_p[12][4] = {
+   "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
+ };
+ 
