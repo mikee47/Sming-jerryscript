@@ -181,3 +181,35 @@ index 3bb753c2..473e03e4 100644
  tests/test262/
  .vs
 +out/
+diff --git a/jerry-port/win/jerry-port-win-process.c b/jerry-port/win/jerry-port-win-process.c
+index c567da8a..40f88d24 100644
+--- a/jerry-port/win/jerry-port-win-process.c
++++ b/jerry-port/win/jerry-port-win-process.c
+@@ -18,7 +18,7 @@
+ 
+ #include <windows.h>
+ 
+-#include <crtdbg.h>
++// #include <crtdbg.h>
+ #include <stdio.h>
+ 
+ void
+@@ -71,12 +71,12 @@ jerry_port_init (void)
+      * This is C runtime specific and thus the above incantations aren't
+      * sufficient to suppress these popups.
+      */
+-    _CrtSetReportMode (_CRT_ERROR, _CRTDBG_MODE_FILE | _CRTDBG_MODE_DEBUG);
+-    _CrtSetReportFile (_CRT_ERROR, _CRTDBG_FILE_STDERR);
+-    _CrtSetReportMode (_CRT_ASSERT, _CRTDBG_MODE_FILE | _CRTDBG_MODE_DEBUG);
+-    _CrtSetReportFile (_CRT_ASSERT, _CRTDBG_FILE_STDERR);
+-    _CrtSetReportMode (_CRT_WARN, _CRTDBG_MODE_FILE | _CRTDBG_MODE_DEBUG);
+-    _CrtSetReportFile (_CRT_WARN, _CRTDBG_FILE_STDERR);
++    // _CrtSetReportMode (_CRT_ERROR, _CRTDBG_MODE_FILE | _CRTDBG_MODE_DEBUG);
++    // _CrtSetReportFile (_CRT_ERROR, _CRTDBG_FILE_STDERR);
++    // _CrtSetReportMode (_CRT_ASSERT, _CRTDBG_MODE_FILE | _CRTDBG_MODE_DEBUG);
++    // _CrtSetReportFile (_CRT_ASSERT, _CRTDBG_FILE_STDERR);
++    // _CrtSetReportMode (_CRT_WARN, _CRTDBG_MODE_FILE | _CRTDBG_MODE_DEBUG);
++    // _CrtSetReportFile (_CRT_WARN, _CRTDBG_FILE_STDERR);
+   }
+ } /* jerry_port_init */
+ 
