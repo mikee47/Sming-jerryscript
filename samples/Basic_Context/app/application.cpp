@@ -1,6 +1,8 @@
 #include <SmingCore.h>
 #include <Jerryscript.h>
 
+IMPORT_FSTR_LOCAL(main_snap, PROJECT_DIR "/out/jerryscript/main.js.snap")
+
 namespace
 {
 /*
@@ -62,7 +64,6 @@ private:
 
 JS::ContextList<MyContext> contexts;
 SimpleTimer timer;
-IMPORT_FSTR(main_snap, PROJECT_DIR "/out/jerryscript/main.js.snap")
 
 /*
  * Called at startup to initialise our jerryscript engine,

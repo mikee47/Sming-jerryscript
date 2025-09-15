@@ -1,11 +1,11 @@
 #include <SmingCore.h>
 #include <Jerryscript.h>
 
+IMPORT_FSTR_LOCAL(main_snap, PROJECT_DIR "/out/jerryscript/main.js.snap")
+
 namespace
 {
 JS::Task task;
-
-IMPORT_FSTR(main_snap, PROJECT_DIR "/out/jerryscript/main.js.snap")
 
 void startJsvm()
 {
